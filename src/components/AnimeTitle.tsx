@@ -4,7 +4,7 @@ interface AnimeTitleProps {
 
 export function AnimeTitle({title}: AnimeTitleProps) {
   return (
-    <h1>
+    <h1 className="font-bold text-white p-1">
       {title}
     </h1>
   )
