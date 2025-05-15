@@ -2,8 +2,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="underline hover:text-red-400">
-      <h1>Dragonball</h1>
+    <div className="w-screen flex flex-col items-center justify-center">
+      <h1>Hallo</h1>
+      <h1>Hallo</h1>
     </div>
   );
 }
