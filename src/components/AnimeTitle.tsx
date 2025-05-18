@@ -7,7 +7,7 @@ interface AnimeTitleProps {
 export function AnimeTitle({title}: AnimeTitleProps) {
   return (
     <motion.h1 
-      className="font-bold text-white p-1"
+      className="font-bold text-white pb-2"
       animate={{}}
       whileHover={{ scale: 1.1 }}
       >
