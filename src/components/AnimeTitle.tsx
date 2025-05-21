@@ -6,12 +6,12 @@ interface AnimeTitleProps {
 
 export function AnimeTitle({title}: AnimeTitleProps) {
   return (
-    <motion.h1 
-      className="font-bold text-white pb-2"
+    <motion.span
+      className="font-bold text-7xl text-white pb-2 transition ease-in-out hover:text-gray-400"
       animate={{}}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{}}
       >
         {title}
-    </motion.h1>
+    </motion.span>
   )
 } 
