@@ -6,6 +6,7 @@ import { AnimeTitle } from "./components/AnimeTitle";
 import { AnimePicture } from "./components/AnimePicture";
 
 import { ANIME_TITLES } from "./lib/constant";
+import { data } from "./lib/data";
 
 function App() {
   const [hoveredText, setHoveredText] = useState<string | null>(null);
@@ -16,7 +17,9 @@ function App() {
         <AnimeTitle key={index} title={title} onHover={setHoveredText} />
       ))}
     </div>
-    {hoveredText && (<AnimePicture title={hoveredText} />
+    {
+      hoveredText && (
+        data[hoveredText].map(item => <AnimePicture title={hoveredText} item={item}/>)
     )}
   </>
 }
