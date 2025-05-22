@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 
 import { AnimeTitle } from "./components/AnimeTitle";
+import { AnimePicture } from "./components/AnimePicture";
 
 import { ANIME_TITLES } from "./lib/constant";
 
@@ -15,7 +16,8 @@ function App() {
         <AnimeTitle key={index} title={title} onHover={setHoveredText} />
       ))}
     </div>
-    {hoveredText && <span>Test</span>}
+    {hoveredText && (<AnimePicture title={hoveredText} />
+    )}
   </>
 }
 
