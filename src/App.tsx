@@ -17,9 +17,8 @@ function App() {
         <AnimeTitle key={index} title={title} onHover={setHoveredText} />
       ))}
     </div>
-    {
-      hoveredText && (
-        data[hoveredText].map(item => <AnimePicture title={hoveredText} item={item}/>)
+    {hoveredText && (
+      data[hoveredText].map((item, index) => <AnimePicture title={hoveredText} item={item} key={index} />)
     )}
   </>
 }

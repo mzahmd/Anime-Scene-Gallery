@@ -1,18 +1,18 @@
 import { motion } from "motion/react"
 
+import { type Image } from "../lib/data";
+
 interface AnimePictureProps {
   title: string;
-  item: {
-    src: string;
-  };
+  item: Image
 }
 
 export function AnimePicture({ title, item }: AnimePictureProps) {
   return (
     <motion.div
       className="absolute w-75 overflow-hidden top-70 left-20 rounded-2xl rotate-355"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, x: item.initial.x, y: item.initial.y }}
+      animate={{ opacity: 1, x: item.animate.x, y: item.animate.y }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
