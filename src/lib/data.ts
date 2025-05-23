@@ -1,6 +1,9 @@
-import p1 from "../tmp/p1.png";
-import p2 from "../tmp/p2.png";
+import p1 from "../tmp/p1.jpg";
+import p2 from "../tmp/p2.jpg";
 import p3 from "../tmp/p3.png";
+import p4 from "../tmp/p4.png";
+import p5 from "../tmp/p5.png";
+import p6 from "../tmp/p6.png";
 
 export interface Image {
   src: string;
@@ -11,6 +14,7 @@ export interface Image {
   animate: {
     x?: number;
     y?: number;
+    rotate?: number;
   };
 }
 
@@ -20,21 +24,23 @@ export const data: Record<string, Image[]> = {
       src: p1,
       initial: {
         x: 100,
-        y: 100,
+        y: -160,
       },
       animate: {
         x: 110,
+        y: -155,
       },
     },
     {
       src: p2,
       initial: {
-        x: 400,
-        y: -120,
+        x: 510,
+        y: -170,
       },
       animate: {
-        x: 420,
-        y: -115,
+        x: 530,
+        y: -165,
+        rotate: 10,
       },
     },
     {
@@ -49,38 +55,38 @@ export const data: Record<string, Image[]> = {
       },
     },
   ],
-  Naruto: [
-    {
-      src: p1,
-      initial: {
-        x: 100,
-        y: 100,
-      },
-      animate: {
-        x: 110,
-      },
-    },
-    {
-      src: p2,
-      initial: {
-        x: 400,
-        y: -120,
-      },
-      animate: {
-        x: 420,
-        y: -115,
-      },
-    },
-    {
-      src: p3,
-      initial: {
-        x: 400,
-        y: -120,
-      },
-      animate: {
-        x: 420,
-        y: -115,
-      },
-    },
-  ],
+  // Naruto: [
+  //   {
+  //     src: p4,
+  //     initial: {
+  //       x: 100,
+  //       y: 100,
+  //     },
+  //     animate: {
+  //       x: 110,
+  //     },
+  //   },
+  //   {
+  //     src: p5,
+  //     initial: {
+  //       x: 400,
+  //       y: -120,
+  //     },
+  //     animate: {
+  //       x: 420,
+  //       y: -115,
+  //     },
+  //   },
+  //   {
+  //     src: p3,
+  //     initial: {
+  //       x: 400,
+  //       y: -120,
+  //     },
+  //     animate: {
+  //       x: 420,
+  //       y: -115,
+  //     },
+  //   },
+  // ],
 };

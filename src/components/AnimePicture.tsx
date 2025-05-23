@@ -12,7 +12,7 @@ export function AnimePicture({ title, item }: AnimePictureProps) {
     <motion.div
       className="absolute w-75 overflow-hidden top-70 left-20 rounded-2xl rotate-355"
       initial={{ opacity: 0, x: item.initial.x, y: item.initial.y }}
-      animate={{ opacity: 1, x: item.animate.x, y: item.animate.y }}
+      animate={{ opacity: 1, rotate: item.animate.rotate, x: item.animate.x, y: item.animate.y }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
