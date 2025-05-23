@@ -1,5 +1,5 @@
 export const ANIME_TITLES = [
   "Dragonball Z", 
-  "Naruto", 
+  // "Naruto", 
   // "One Piece"
 ];
