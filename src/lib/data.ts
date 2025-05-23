@@ -1,9 +1,9 @@
 import p1 from "../tmp/p1.jpg";
 import p2 from "../tmp/p2.jpg";
 import p3 from "../tmp/p3.png";
-import p4 from "../tmp/p4.png";
-import p5 from "../tmp/p5.png";
-import p6 from "../tmp/p6.png";
+// import p4 from "../tmp/p4.png";
+// import p5 from "../tmp/p5.png";
+// import p6 from "../tmp/p6.png";
 
 export interface Image {
   src: string;
