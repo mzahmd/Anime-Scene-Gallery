@@ -1,13 +1,13 @@
 import "./App.css";
 
 import { useState } from "react";
+import { AnimatePresence } from "motion/react";
 
 import { AnimeTitle } from "./components/AnimeTitle";
 import { AnimePicture } from "./components/AnimePicture";
 
 import { ANIME_TITLES } from "./lib/constant";
 import { data } from "./lib/data";
-import { AnimatePresence } from "motion/react";
 
 function App() {
   const [hoveredText, setHoveredText] = useState<string | null>(null);

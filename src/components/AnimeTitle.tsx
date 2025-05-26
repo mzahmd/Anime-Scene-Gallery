@@ -10,9 +10,16 @@ export function AnimeTitle({ title, onHover }: AnimeTitleProps) {
     <motion.span
       // data-text={title}
       className="font-bold text-7xl text-slate-200 pb-2 transition-colors duration-300 ease-in-out hover:text-slate-400"
-      animate={{}}
-      whileHover={{ scaleY: 1.2 }}
-      transition={{ type: "spring", mass: 0.5, damping: 5 }}
+      whileHover={{
+        scaleY: 1.2
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        mass: 0.5,
+        damping: 10,
+        bounce: 0.2,
+      }}
       onHoverStart={() => onHover(title.id)}
       onHoverEnd={() => onHover(null)}
     // onClick={(e) => console.log(e.currentTarget.dataset.text)}

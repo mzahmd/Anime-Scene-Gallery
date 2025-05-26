@@ -24,9 +24,15 @@ export function AnimePicture({ title, item }: AnimePictureProps) {
         x: item.animate.x,
         y: item.animate.y
       }}
-      exit={{ 
+      exit={{
         scale: 0,
-        opacity: 0 
+        opacity: 0
+      }}
+      transition={{
+        type: "spring",
+        stiffness: 300,
+        mass: 0.5,
+        damping: 15,
       }}
     >
       <img src={item.src} alt={title} className="object-cover" />
