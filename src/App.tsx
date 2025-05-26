@@ -11,16 +11,18 @@ import { data } from "./lib/data";
 function App() {
   const [hoveredText, setHoveredText] = useState<string | null>(null);
 
-  return <>
-    <div className="w-screen flex flex-col items-center justify-center">
-      {ANIME_TITLES.map((title, index) => (
-        <AnimeTitle key={index} title={title} onHover={setHoveredText} />
-      ))}
+  return (
+    <div>
+      <div className="w-screen flex flex-col items-center justify-center">
+        {ANIME_TITLES.map((title, index) => (
+          <AnimeTitle key={index} title={title} onHover={setHoveredText} />
+        ))}
+      </div>
+      {hoveredText && (
+        data[hoveredText].map((item, index) => <AnimePicture title={hoveredText} item={item} key={index} />)
+      )}
     </div>
-    {hoveredText && (
-      data[hoveredText].map((item, index) => <AnimePicture title={hoveredText} item={item} key={index} />)
-    )}
-  </>
+  )
 }
 
 export default App;
