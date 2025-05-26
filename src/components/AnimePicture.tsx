@@ -14,7 +14,6 @@ export function AnimePicture({ title, item }: AnimePictureProps) {
       initial={{ opacity: 0, x: item.initial.x, y: item.initial.y }}
       animate={{ opacity: 1, rotate: item.animate.rotate, x: item.animate.x, y: item.animate.y }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
     >
       <img src={item.src} alt={title} className="object-cover" />
     </motion.div>
