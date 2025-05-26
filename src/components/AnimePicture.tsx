@@ -10,7 +10,7 @@ interface AnimePictureProps {
 export function AnimePicture({ title, item }: AnimePictureProps) {
   return (
     <motion.div
-      className="absolute w-75 overflow-hidden top-70 left-20 rounded-2xl rotate-355"
+      className="absolute w-60 overflow-hidden rounded-2xl"
       initial={{
         opacity: 0,
         x: item.initial.x,
