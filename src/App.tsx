@@ -9,11 +9,11 @@ import { ANIME_TITLES } from "./lib/constant";
 import { data } from "./lib/data";
 
 function App() {
-  const [hoveredText, setHoveredText] = useState<string | null>(null);
+  const [hoveredText, setHoveredText] = useState<string | null>("Dragonball");
 
   return (
-    <div>
-      <div className="w-screen flex flex-col items-center justify-center">
+    <div className="relativ flex justify-center">
+      <div className="flex flex-col items-center justify-center w-screen">
         {ANIME_TITLES.map((title, index) => (
           <AnimeTitle key={index} title={title} onHover={setHoveredText} />
         ))}
