@@ -35,11 +35,11 @@ export const data: Record<string, Image[]> = {
       src: p2,
       initial: {
         x: 500,
-        y: -300,
+        y: -270,
       },
       animate: {
         x: window.innerWidth / 2 / 4 / 2,
-        y: window.innerHeight / 2 / 4 - 300,
+        y: window.innerHeight / 2 / 4 - 270,
         rotate: 10,
       },
     },

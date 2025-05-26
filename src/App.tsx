@@ -7,6 +7,7 @@ import { AnimePicture } from "./components/AnimePicture";
 
 import { ANIME_TITLES } from "./lib/constant";
 import { data } from "./lib/data";
+import { AnimatePresence } from "motion/react";
 
 function App() {
   const [hoveredText, setHoveredText] = useState<string | null>(null);
@@ -14,12 +15,14 @@ function App() {
   return (
     <div className="relativ flex justify-center">
       <div className="flex flex-col items-center justify-center w-screen">
-        {ANIME_TITLES.map(title => 
+        {ANIME_TITLES.map(title =>
           <AnimeTitle key={title.id} title={title} onHover={setHoveredText} />
         )}
       </div>
       {hoveredText && (
-        data[hoveredText].map((item, index) => <AnimePicture title={hoveredText} item={item} key={index} />)
+        <AnimatePresence>
+          {data[hoveredText].map((item, index) => <AnimePicture title={hoveredText} item={item} key={index} />)}
+        </AnimatePresence>
       )}
     </div>
   )

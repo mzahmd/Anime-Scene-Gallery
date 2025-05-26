@@ -12,17 +12,22 @@ export function AnimePicture({ title, item }: AnimePictureProps) {
     <motion.div
       className="absolute w-60 overflow-hidden rounded-2xl"
       initial={{
+        scale: 0,
         opacity: 0,
         x: item.initial.x,
         y: item.initial.y
       }}
       animate={{
+        scale: 1,
         opacity: 1,
         rotate: item.animate.rotate,
         x: item.animate.x,
         y: item.animate.y
       }}
-      exit={{ opacity: 0 }}
+      exit={{ 
+        scale: 0,
+        opacity: 0 
+      }}
     >
       <img src={item.src} alt={title} className="object-cover" />
     </motion.div>
