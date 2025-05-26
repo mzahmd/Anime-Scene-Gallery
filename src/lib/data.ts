@@ -1,9 +1,9 @@
 import p1 from "../tmp/p1.jpg";
 import p2 from "../tmp/p2.jpg";
 import p3 from "../tmp/p3.png";
-import p4 from "../tmp/p4.png";
-import p5 from "../tmp/p5.png";
-import p6 from "../tmp/p6.png";
+// import p4 from "../tmp/p4.png";
+// import p5 from "../tmp/p5.png";
+// import p6 from "../tmp/p6.png";
 
 export interface Image {
   src: string;
@@ -19,38 +19,39 @@ export interface Image {
 }
 
 export const data: Record<string, Image[]> = {
-  "Dragonball Z": [
+  Dragonball: [
     {
       src: p1,
       initial: {
-        x: 100,
-        y: -160,
+        x: -440,
+        y: -250,
       },
       animate: {
-        x: 110,
-        y: -155,
+        x: window.innerWidth / 2 / 4 - 510,
+        y: window.innerHeight / 2 / 4 - 250,
       },
     },
     {
       src: p2,
       initial: {
-        x: 510,
-        y: -170,
+        x: 500,
+        y: -300,
       },
       animate: {
-        x: 530,
-        y: -165,
+        x: window.innerWidth / 2 / 4 / 2,
+        y: window.innerHeight / 2 / 4 - 300,
         rotate: 10,
       },
     },
     {
       src: p3,
       initial: {
-        x: 950,
-        y: 20,
+        x: 200,
+        y: -250,
       },
       animate: {
-        y: 10,
+        x: window.innerWidth / 2 / 4 + 200,
+        y: window.innerHeight / 2 / 4 - 250,
       },
     },
   ],

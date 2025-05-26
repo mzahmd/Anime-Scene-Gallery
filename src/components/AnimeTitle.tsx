@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 
 interface AnimeTitleProps {
-  title: string;
+  title: { id: string, name: string };
   onHover: (title: string | null) => void;
 }
 
@@ -13,11 +13,11 @@ export function AnimeTitle({ title, onHover }: AnimeTitleProps) {
       animate={{}}
       whileHover={{ scaleY: 1.2 }}
       transition={{ type: "spring", mass: 0.5, damping: 5 }}
-      onHoverStart={() => onHover(title)}
+      onHoverStart={() => onHover(title.id)}
       onHoverEnd={() => onHover(null)}
     // onClick={(e) => console.log(e.currentTarget.dataset.text)}
     >
-      {title}
+      {title.name}
     </motion.span>
   )
 }
