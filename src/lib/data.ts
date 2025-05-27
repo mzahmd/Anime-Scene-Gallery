@@ -78,8 +78,8 @@ export const data: Record<string, Image[]> = {
         y: -170,
       },
       animate: {
-        x: window.innerWidth / 2 / 4 / 2 + 10,
-        y: window.innerHeight / 2 / 4 - 170,
+        x: window.innerWidth / 2 / 4 / 2 - 350,
+        y: window.innerHeight / 2 / 4 - 70,
         rotate: -5,
       },
     },
@@ -91,8 +91,8 @@ export const data: Record<string, Image[]> = {
       },
       animate: {
         x: window.innerWidth / 2 / 4 / 2 + 10,
-        y: window.innerHeight / 2 / 4 - 17,
-        rotate: -5,
+        y: window.innerHeight / 2 / 4 - 110,
+        rotate: 10,
       },
     },
     {
