@@ -45,11 +45,11 @@ export const data: Record<string, Image[]> = {
     {
       src: yourName2,
       initial: {
-        x: 500,
+        x: -10,
         y: -270,
       },
       animate: {
-        x: window.innerWidth / 2 / 4 / 2,
+        x: window.innerWidth / 2 / 4 / 2 - 10,
         y: window.innerHeight / 2 / 4 - 270,
         rotate: 10,
       },
