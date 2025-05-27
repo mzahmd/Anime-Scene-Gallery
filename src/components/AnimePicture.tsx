@@ -1,6 +1,6 @@
 import { motion } from "motion/react"
 
-import { type Image } from "../lib/data";
+import { type Image } from "../lib/constant";
 
 interface AnimePictureProps {
   title: string;

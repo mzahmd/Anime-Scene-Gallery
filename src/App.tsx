@@ -7,7 +7,7 @@ import { AnimeTitle } from "./components/AnimeTitle";
 import { AnimePicture } from "./components/AnimePicture";
 
 import { ANIME_TITLES } from "./lib/constant";
-import { data } from "./lib/data";
+import { data } from "./lib/constant";
 
 function App() {
   const [hoveredText, setHoveredText] = useState<string | null>(null);
