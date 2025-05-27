@@ -9,7 +9,7 @@ export function AnimeTitle({ title, onHover }: AnimeTitleProps) {
   return (
     <motion.span
       // data-text={title}
-      className="font-bold text-7xl text-slate-200 hover:text-slate-400 transition-colors duration-300 ease-in-out pb-2"
+      className="font-bold text-7xl text-slate-200 hover:text-slate-400 transition-colors duration-300 ease-in-out uppercase pb-2"
       whileHover={{
         scaleY: 1.2
       }}
