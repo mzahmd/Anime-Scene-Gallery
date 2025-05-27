@@ -1,10 +1,10 @@
 import { motion } from "motion/react"
 
-import { type Image } from "../lib/constant";
+import { type AnimeAnimationEntry } from "../lib/constant";
 
 interface AnimePictureProps {
   title: string;
-  item: Image,
+  item: AnimeAnimationEntry,
   mousePosition: {
     x: number;
     y: number;
@@ -18,15 +18,15 @@ export function AnimePicture({ title, item, mousePosition }: AnimePictureProps) 
       initial={{
         scale: 0,
         opacity: 0,
-        x: item.initial.x,
-        y: item.initial.y
+        x: item.x,
+        y: item.y
       }}
       animate={{
         scale: 1,
         opacity: 1,
-        rotate: item.animate.rotate,
-        x: item.animate.x + (mousePosition.x / 6),
-        y: item.animate.y + (mousePosition.y / 6)
+        rotate: item.rotate,
+        x: item.x + (mousePosition.x / 6),
+        y: item.y + (mousePosition.y / 6)
       }}
       exit={{
         scale: 0,
