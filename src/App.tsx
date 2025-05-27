@@ -5,9 +5,9 @@ import { AnimatePresence } from "motion/react";
 
 import { AnimeTitle } from "./components/AnimeTitle";
 import { AnimePicture } from "./components/AnimePicture";
+import { CustomCursor } from "./components/CustomCursor";
 
 import { ANIME_TITLES, data } from "./lib/constant";
-import { CustomCursor } from "./components/CustomCursor";
 import { useMousePosition } from "./hooks/useMousePosition";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className="relativ flex justify-center">
+      <div className="relativ flex justify-center items-center">
         <div className="flex flex-col items-center justify-center w-screen cursor-none" onMouseEnter={() => setShowCursor(true)} onMouseLeave={() => setShowCursor(false)}>
           <CustomCursor isActive={showCursor} mousePosition={mousePosition} />
           {ANIME_TITLES.map(title =>
