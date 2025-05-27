@@ -1,10 +1,10 @@
-import yourName1 from "../tmp/YourName1.png";
-import yourName2 from "../tmp/YourName2.png";
-import yourName3 from "../tmp/YourName3.png";
-import weatheringWithYou2 from "../tmp/WeatheringWithYou2.png";
-import Suzume1 from "../tmp/Suzume1.png";
-import Suzume2 from "../tmp/Suzume2.png";
-import Suzume3 from "../tmp/Suzume3.png";
+import yourName1 from "/YourName1.png";
+import yourName2 from "/YourName2.png";
+import yourName3 from "/YourName3.png";
+import weatheringWithYou2 from "/WeatheringWithYou2.png";
+import Suzume1 from "/Suzume1.png";
+import Suzume2 from "/Suzume2.png";
+import Suzume3 from "/Suzume3.png";
 
 
 export const ANIME_TITLES = [
