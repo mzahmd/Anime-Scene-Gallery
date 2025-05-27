@@ -1,10 +1,14 @@
 import { motion } from "motion/react"
 
-import { useMousePosition } from "../hooks/useMousePosition"
+interface CustomCursorProps {
+  isActive: boolean;
+  mousePosition: {
+    x: number;
+    y: number;
+  };
+}
 
-
-export function CustomCursor({ isActive }: { isActive: boolean }) {
-  const mousePosition = useMousePosition()
+export function CustomCursor({ isActive, mousePosition }: CustomCursorProps) {
 
   if (!isActive) {
     return null
