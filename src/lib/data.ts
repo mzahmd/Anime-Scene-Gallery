@@ -1,9 +1,10 @@
-import p1 from "../tmp/p1.jpg";
-import p2 from "../tmp/p2.jpg";
-import p3 from "../tmp/p3.png";
-import p4 from "../tmp/p4.png";
-import p5 from "../tmp/p5.png";
-import p6 from "../tmp/p6.png";
+import yourName1 from "../tmp/YourName1.png";
+import yourName2 from "../tmp/YourName2.png";
+import yourName3 from "../tmp/YourName3.png";
+import weatheringWithYou2 from "../tmp/WeatheringWithYou2.png";
+import Suzume1 from "../tmp/Suzume1.png";
+import Suzume2 from "../tmp/Suzume2.png";
+import Suzume3 from "../tmp/Suzume3.png";
 
 export interface Image {
   src: string;
@@ -19,9 +20,9 @@ export interface Image {
 }
 
 export const data: Record<string, Image[]> = {
-  Dragonball: [
+  YourName: [
     {
-      src: p1,
+      src: yourName1,
       initial: {
         x: -510,
         y: -250,
@@ -32,7 +33,7 @@ export const data: Record<string, Image[]> = {
       },
     },
     {
-      src: p2,
+      src: yourName2,
       initial: {
         x: 500,
         y: -270,
@@ -44,7 +45,7 @@ export const data: Record<string, Image[]> = {
       },
     },
     {
-      src: p3,
+      src: yourName3,
       initial: {
         x: 200,
         y: -250,
@@ -55,21 +56,23 @@ export const data: Record<string, Image[]> = {
       },
     },
   ],
-  Naruto: [
+  WeatheringWithYou: [
     {
-      src: p4,
+      src: weatheringWithYou2,
       initial: {
-        x: -540,
-        y: -150,
+        x: 500,
+        y: -170,
       },
       animate: {
-        x: window.innerWidth / 2 / 4 - 540,
-        y: window.innerHeight / 2 / 4 - 150,
-        rotate: -10,
+        x: window.innerWidth / 2 / 4 / 2 + 10,
+        y: window.innerHeight / 2 / 4 - 170,
+        rotate: -5,
       },
     },
+  ],
+  Suzume: [
     {
-      src: p5,
+      src: Suzume1,
       initial: {
         x: 500,
         y: -170,
@@ -81,7 +84,19 @@ export const data: Record<string, Image[]> = {
       },
     },
     {
-      src: p6,
+      src: Suzume2,
+      initial: {
+        x: 500,
+        y: -17,
+      },
+      animate: {
+        x: window.innerWidth / 2 / 4 / 2 + 10,
+        y: window.innerHeight / 2 / 4 - 17,
+        rotate: -5,
+      },
+    },
+    {
+      src: Suzume3,
       initial: {
         x: 200,
         y: -100,

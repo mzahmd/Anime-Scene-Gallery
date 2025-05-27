@@ -1,5 +1,5 @@
 export const ANIME_TITLES = [
-  { id: "Dragonball", name: "Dragonball Z"},
-  { id: "Naruto", name: "Naruto" },
-  // { id: "OnePiece", name: "One Piece" },
+  { id: "YourName", name: "Your Name" },
+  { id: "WeatheringWithYou", name: "Weathering with You" },
+  { id: "Suzume", name: "Suzume" },
 ];
