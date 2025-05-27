@@ -8,6 +8,7 @@ import { AnimePicture } from "./components/AnimePicture";
 import { CustomCursor } from "./components/CustomCursor";
 
 import { ANIME_TITLES, data } from "./lib/constant";
+
 import { useMousePosition } from "./hooks/useMousePosition";
 
 function App() {
