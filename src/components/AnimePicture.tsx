@@ -4,10 +4,14 @@ import { type Image } from "../lib/constant";
 
 interface AnimePictureProps {
   title: string;
-  item: Image
+  item: Image,
+  mousePosition: {
+    x: number;
+    y: number;
+  }
 }
 
-export function AnimePicture({ title, item }: AnimePictureProps) {
+export function AnimePicture({ title, item, mousePosition }: AnimePictureProps) {
   return (
     <motion.div
       className="absolute w-60 overflow-hidden rounded-2xl shadow-2xl"
@@ -21,8 +25,8 @@ export function AnimePicture({ title, item }: AnimePictureProps) {
         scale: 1,
         opacity: 1,
         rotate: item.animate.rotate,
-        x: item.animate.x,
-        y: item.animate.y
+        x: item.animate.x + (mousePosition.x / 6),
+        y: item.animate.y + (mousePosition.y / 6)
       }}
       exit={{
         scale: 0,

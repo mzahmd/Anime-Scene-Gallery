@@ -8,23 +8,25 @@ import { AnimePicture } from "./components/AnimePicture";
 
 import { ANIME_TITLES, data } from "./lib/constant";
 import { CustomCursor } from "./components/CustomCursor";
+import { useMousePosition } from "./hooks/useMousePosition";
 
 function App() {
   const [hoveredText, setHoveredText] = useState<string | null>(null);
   const [showCursor, setShowCursor] = useState(false);
+  const mousePosition = useMousePosition();
 
   return (
     <>
       <div className="relativ flex justify-center">
         <div className="flex flex-col items-center justify-center w-screen cursor-none" onMouseEnter={() => setShowCursor(true)} onMouseLeave={() => setShowCursor(false)}>
-          <CustomCursor isActive={showCursor} />
+          <CustomCursor isActive={showCursor} mousePosition={mousePosition} />
           {ANIME_TITLES.map(title =>
             <AnimeTitle key={title.id} title={title} onHover={setHoveredText} />
           )}
         </div>
         {hoveredText && (
           <AnimatePresence>
-            {data[hoveredText].map((item, index) => <AnimePicture title={hoveredText} item={item} key={index} />)}
+            {data[hoveredText].map((item, index) => <AnimePicture key={index} title={hoveredText} item={item} mousePosition={mousePosition} />)}
           </AnimatePresence>
         )}
       </div>
