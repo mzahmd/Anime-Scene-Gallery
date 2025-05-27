@@ -1,7 +1,9 @@
 import yourName1 from "/YourName1.png";
 import yourName2 from "/YourName2.png";
 import yourName3 from "/YourName3.png";
+import weatheringWithYou1 from "/WeatheringWithYou1.png";
 import weatheringWithYou2 from "/WeatheringWithYou2.png";
+import weatheringWithYou3 from "/WeatheringWithYou3.png";
 import Suzume1 from "/Suzume1.png";
 import Suzume2 from "/Suzume2.png";
 import Suzume3 from "/Suzume3.png";
@@ -23,14 +25,14 @@ export const data: Record<string, AnimeAnimationEntry[]> = {
   YourName: [
     {
       src: yourName1,
-      x: window.innerWidth / 4 - 500,
-      y: window.innerHeight / 4 - 430,
+      x: window.innerWidth / 4 / 2 - 700,
+      y: window.innerHeight / 4 / 2 - 300,
       rotate: -10,
     },
     {
       src: yourName2,
-      x: window.innerWidth / 4 / 2 - 700,
-      y: window.innerHeight / 4 / 2 - 300,
+      x: window.innerWidth / 4 - 500,
+      y: window.innerHeight / 4 - 430,
       rotate: 10,
     },
     {
@@ -42,10 +44,22 @@ export const data: Record<string, AnimeAnimationEntry[]> = {
   ],
   WeatheringWithYou: [
     {
+      src: weatheringWithYou1,
+      x: window.innerWidth / 4 - 800,
+      y: window.innerHeight / 4 - 350,
+      rotate: -15,
+    },
+    {
       src: weatheringWithYou2,
       x: window.innerWidth / 4 / 2 - 200,
       y: window.innerHeight / 4 / 2 - 300,
       rotate: -5,
+    },
+    {
+      src: weatheringWithYou3,
+      x: window.innerWidth / 4  + 50,
+      y: window.innerHeight / 4  - 300,
+      rotate: 5,
     },
   ],
   Suzume: [
