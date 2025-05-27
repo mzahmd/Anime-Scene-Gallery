@@ -34,12 +34,12 @@ export const data: Record<string, Image[]> = {
       src: yourName1,
       initial: {
         x: -510,
-        y: -250,
+        y: -280,
       },
       animate: {
         x: window.innerWidth / 2 / 4 - 510,
-        y: window.innerHeight / 2 / 4 - 250,
-        rotate: 0
+        y: window.innerHeight / 2 / 4 - 280,
+        rotate: -10
       },
     },
     {
@@ -76,7 +76,7 @@ export const data: Record<string, Image[]> = {
       },
       animate: {
         x: window.innerWidth / 2 / 4 / 2 + 10,
-        y: window.innerHeight / 2 / 4 - 170,
+        y: window.innerHeight / 2 / 4 - 215,
         rotate: -5,
       },
     },
@@ -85,11 +85,11 @@ export const data: Record<string, Image[]> = {
     {
       src: Suzume1,
       initial: {
-        x: 500,
-        y: -170,
+        x:-450,
+        y: -70,
       },
       animate: {
-        x: window.innerWidth / 2 / 4 / 2 - 350,
+        x: window.innerWidth / 2 / 4 / 2 - 450,
         y: window.innerHeight / 2 / 4 - 70,
         rotate: -5,
       },
@@ -97,13 +97,13 @@ export const data: Record<string, Image[]> = {
     {
       src: Suzume2,
       initial: {
-        x: 500,
-        y: -17,
+        x: -20,
+        y: -135,
       },
       animate: {
-        x: window.innerWidth / 2 / 4 / 2 + 10,
-        y: window.innerHeight / 2 / 4 - 110,
-        rotate: 10,
+        x: window.innerWidth / 2 / 4 / 2 + -20,
+        y: window.innerHeight / 2 / 4 - 145,
+        rotate: 5,
       },
     },
     {
