@@ -1,22 +1,12 @@
-import { useEffect, useState } from "react"
 import { motion } from "motion/react"
+
+import { useMousePosition } from "../hooks/useMousePosition"
 
 
 export function CustomCursor({ isActive }: { isActive: boolean }) {
-  const [position, setPosition] = useState({ x: 0, y: 0 })
+  const mousePosition = useMousePosition()
 
-  const handleMouseMove = (e: MouseEvent) => {
-    setPosition({ x: e.clientX, y: e.clientY })
-  }
-
-  useEffect(() => {
-    if(isActive)
-      window.addEventListener("mousemove", (e) => handleMouseMove(e))
-
-    return () => window.removeEventListener("mousemove", (e) => handleMouseMove(e))
-  }, [isActive])
-
-  if(!isActive) {
+  if (!isActive) {
     return null
   }
 
@@ -25,12 +15,12 @@ export function CustomCursor({ isActive }: { isActive: boolean }) {
       <motion.div
         className="fixed w-3 h-3 top-0 left-0 bg-slate-100 rounded-full z-10"
         initial={{
-          x: position.x,
-          y: position.y,
+          x: mousePosition.x,
+          y: mousePosition.y,
         }}
         animate={{
-          x: position.x,
-          y: position.y,
+          x: mousePosition.x,
+          y: mousePosition.y,
         }}
       >
       </motion.div>
