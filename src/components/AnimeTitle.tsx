@@ -20,8 +20,8 @@ export function AnimeTitle({ title, onHover }: AnimeTitleProps) {
         damping: 10,
         bounce: 0.2,
       }}
-      onHoverStart={() => onHover(title.id)}
-      onHoverEnd={() => onHover(null)}
+      onMouseEnter={() => onHover(title.id)}
+      onMouseLeave={() => onHover(null)}
     // onClick={(e) => console.log(e.currentTarget.dataset.text)}
     >
       {title.name}
