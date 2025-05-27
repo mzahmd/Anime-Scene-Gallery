@@ -9,13 +9,13 @@ import Suzume3 from "../tmp/Suzume3.png";
 export interface Image {
   src: string;
   initial: {
-    x?: number;
-    y?: number;
+    x: number;
+    y: number;
   };
   animate: {
-    x?: number;
-    y?: number;
-    rotate?: number;
+    x: number;
+    y: number;
+    rotate: number;
   };
 }
 
@@ -30,6 +30,7 @@ export const data: Record<string, Image[]> = {
       animate: {
         x: window.innerWidth / 2 / 4 - 510,
         y: window.innerHeight / 2 / 4 - 250,
+        rotate: 0
       },
     },
     {
@@ -53,6 +54,7 @@ export const data: Record<string, Image[]> = {
       animate: {
         x: window.innerWidth / 2 / 4 + 200,
         y: window.innerHeight / 2 / 4 - 250,
+        rotate: 0
       },
     },
   ],
