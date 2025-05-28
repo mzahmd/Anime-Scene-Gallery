@@ -14,14 +14,14 @@ export const ANIME_TITLES = [
   { id: "Suzume", name: "Suzume" },
 ];
 
-export type AnimeAnimationEntry = {
+export type AnimePictureEntry = {
   src: string;
   x: number;
   y: number;
   rotate: number;
 };
 
-export const data: Record<string, AnimeAnimationEntry[]> = {
+export const data: Record<string, AnimePictureEntry[]> = {
   YourName: [
     {
       src: yourName1,

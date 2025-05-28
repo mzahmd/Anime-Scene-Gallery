@@ -1,10 +1,10 @@
 import { motion } from "motion/react"
 
-import { type AnimeAnimationEntry } from "../lib/constant";
+import { type AnimePictureEntry } from "../lib/constant";
 
 interface AnimePictureProps {
   title: string;
-  item: AnimeAnimationEntry,
+  item: AnimePictureEntry,
   mousePosition: {
     x: number;
     y: number;
