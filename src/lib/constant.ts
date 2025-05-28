@@ -8,18 +8,13 @@ import Suzume1 from "/Suzume1.png";
 import Suzume2 from "/Suzume2.png";
 import Suzume3 from "/Suzume3.png";
 
+import type { AnimePictureEntry } from "./type";
+
 export const ANIME_TITLES = [
   { id: "YourName", name: "Your Name" },
   { id: "WeatheringWithYou", name: "Weathering with You" },
   { id: "Suzume", name: "Suzume" },
 ];
-
-export type AnimePictureEntry = {
-  src: string;
-  x: number;
-  y: number;
-  rotate: number;
-};
 
 export const data: Record<string, AnimePictureEntry[]> = {
   YourName: [
