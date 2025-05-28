@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <div className="relativ flex justify-center items-center">
-        <div className="flex flex-col items-center justify-center w-screen cursor-none" onMouseEnter={() => setShowCursor(true)} onMouseLeave={() => setShowCursor(false)}>
+        <div className="text-slate-200 flex flex-col items-center justify-center w-screen cursor-none font-bold text-6xl uppercase" onMouseEnter={() => setShowCursor(true)} onMouseLeave={() => setShowCursor(false)}>
           <CustomCursor isActive={showCursor} mousePosition={mousePosition} />
           {ANIME_TITLES.map(title =>
             <AnimeTitle key={title.id} title={title} onHover={setHoveredText} />
